@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rach's Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Rach's Blog</h1>
+    </header>
+    <nav>
+        <a href="#tech">Tech</a>
+        <a href="#spiritual">Spiritual Stories</a>
+        <a href="#experiences">My Experiences</a>
+    </nav>
+    <main>
+        <section id="tech" class="content-section">
+            <h2>Tech</h2>
+            <div class="post">
+                <h3>Latest Trends in Tech</h3>
+                <p>This is where you can write about the latest trends in technology.</p>
+                <button onclick="likePost(this)">Like (<span class="like-count">0</span>)</button>
+                <button onclick="toggleComments(this)">Comments</button>
+                <div class="comments" style="display: none;">
+                    <input type="text" placeholder="Write a comment..." onkeydown="if(event.key === 'Enter') addComment(this)">
+                    <div class="comment-list"></div>
+                </div>
+            </div>
+        </section>
+        <section id="spiritual" class="content-section">
+            <h2>Spiritual Stories</h2>
+            <div class="post">
+                <h3>A Spiritual Journey</h3>
+                <p>This is where you can share spiritual stories and experiences.</p>
+                <button onclick="likePost(this)">Like (<span class="like-count">0</span>)</button>
+                <button onclick="toggleComments(this)">Comments</button>
+                <div class="comments" style="display: none;">
+                    <input type="text" placeholder="Write a comment..." onkeydown="if(event.key === 'Enter') addComment(this)">
+                    <div class="comment-list"></div>
+                </div>
+            </div>
+        </section>
+        <section id="experiences" class="content-section">
+            <h2>My Experiences</h2>
+            <div class="post">
+                <h3>Personal Experience</h3>
+                <p>Share your personal experiences here.</p>
+                <button onclick="likePost(this)">Like (<span class="like-count">0</span>)</button>
+                <button onclick="toggleComments(this)">Comments</button>
+                <div class="comments" style="display: none;">
+                    <input type="text" placeholder="Write a comment..." onkeydown="if(event.key === 'Enter') addComment(this)">
+                    <div class="comment-list"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Rach's Blog. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
